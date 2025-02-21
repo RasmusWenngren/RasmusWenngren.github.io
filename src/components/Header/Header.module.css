@@ -1,0 +1,76 @@
+header {
+  padding: var(--space-lg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.nav-menu {
+  display: flex;
+  gap: var(--space-md);
+  list-style: none;
+
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: var(--color-text);
+  padding: var(--space-sm);
+  border: 2px solid var(--color-text);
+  border-radius: 8px;
+  transition: var(--transition);
+
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: var(--color-bg);
+  background-color: var(--color-text);
+  box-shadow: 0 0 12px var(--color-text), 0 0 12px var(--color-text) inset;
+}
+
+.nav-toggle,
+.nav-toggle-label {
+  display: none;
+}
+
+@media (max-width: 600px) {
+
+  .nav-toggle-label {
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    font-size: var(--font-size-xl);
+    cursor: pointer;
+    z-index: 100;
+    display: block;
+    color: var(--color-text);
+
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 10rem;
+    background: var(--color-gray-dark);
+    flex-direction: column;
+    align-items: center;
+    z-index: 95;
+    gap: var(--space-lg);
+    opacity: 0;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease, visibility 0s ease var(--transition-speed);
+  }
+
+  .menu-open {
+    opacity: 0.9;
+    transform: translateX(0);
+    visibility: visible;
+    transition: opacity var(--transition), transform var(--transition), visibility 0s ease 0s;
+  }
+}

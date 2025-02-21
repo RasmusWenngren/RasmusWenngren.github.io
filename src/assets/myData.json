@@ -1,0 +1,94 @@
+{
+
+  "sections": 
+  {
+    "assignments": {
+      "title": "Assignments",
+      "items": [
+        {
+          "period": "2018.11.14 - Ongoing",
+          "title": "Father of two",
+          "location": "Stockholm Järfälla"
+        },
+        {
+          "period": "2024.08.24 - Ongoing",
+          "title": "Husband",
+          "location": "Stockholm Järfälla"
+        }
+      ]
+    },
+    "bakerEmployment": {
+      "title": "Employment Baker",
+      "items": [
+        {
+          "period": "2022.01.13 - 2024.08.16",
+          "title": "Baker at Petjos Café",
+          "location": "Kungsängen"
+        },
+        {
+          "period": "2018.09.01 - 2021.12.20",
+          "title": "Head Baker at Valhallabageriet",
+          "location": "Östermalmsgatan"
+        },
+        {
+          "period": "2016.11.14 - 2018.08.01",
+          "title": "Head Baker at Valhallabageriet",
+          "location": "Valhallavägen"
+        },
+        {
+          "period": "2014.08.04 - 2016.10.08",
+          "title": "Baker at Valhallabageriet",
+          "location": "Valhallavägen"
+        }
+      ]
+    },
+    "restaurantEmployment": {
+      "title": "Employment Restaurant",
+      "items": [
+        {
+          "period": "2013.08.08 - 2014.08.08",
+          "title": "Head Chef Pastry at Northcote Manor",
+          "location": "Langho Blackburn UK",
+          "locationUrl": "https://www.google.se/maps/place/Northcote+Hotel+%26+Restaurant/@53.8092201,-2.4497974,523m/data=!3m1!1e3!4m21!1m11!3m10!1s0x487b9c2d853fc5ab:0x26ad788273d5132c!2sNorthcote+Hotel+%26+Restaurant!5m2!4m1!1i2!8m2!3d53.8092201!4d-2.4472225!10e1!16s%2Fm%2F06w7x0g!3m8!1s0x487b9c2d853fc5ab:0x26ad788273d5132c!5m2!4m1!1i2!8m2!3d53.8092201!4d-2.4472225!16s%2Fm%2F06w7x0g?hl=sv&entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "period": "2021.08.04 - 2013.08.07",
+          "title": "Pastry Chef at Northcote Manor",
+          "location": "Langho Blackburn UK"
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "period": "2024.09 - Ongoing",
+          "title": ".Net Fullstack Developer",
+          "location": "Chas Academy"
+        },
+        {
+          "period": "2008.08.04 - 2011.06.25",
+          "title": "Hotel and Restaurant at Matpedagogerna",
+          "location": "Sundbyberg Stockholm"
+        }
+      ]
+    },
+    "languages": {
+      "title": "Language",
+      "items": [
+        {
+          "name": "Swedish",
+          "level": "Fluent in speech and writing"
+        },
+        {
+          "name": "English",
+          "level": "Fluent in speech and writing"
+        },
+        {
+          "name": "C#",
+          "level": "Good comprehension and writing"
+        }
+      ]
+    }
+  }
+}
