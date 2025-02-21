@@ -1,6 +1,4 @@
-import { NavLink } from "react-router-dom";
 import myData from "../assets/myData.json";
-import Hero from "../components/Hero";
 import Card from "../components/Card";
 import PageLayout from "../components/PageLayout";
 

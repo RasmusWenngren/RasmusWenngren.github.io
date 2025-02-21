@@ -1,6 +1,4 @@
 import Card from "../components/Card";
-import Hero from "../components/Hero";
-import { NavLink } from "react-router-dom";
 import PageLayout from "../components/PageLayout";
 
 const cardData = [
