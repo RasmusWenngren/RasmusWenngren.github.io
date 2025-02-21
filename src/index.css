@@ -50,8 +50,7 @@ body {
   animation: fadeIn 0.5s ease-in forwards;
   font-size: var(--font-size-base);
   font-family: 'Roboto', sans-serif;
-  align-items: cetner;
-  justify-content: center;
+  align-items: center;
 }
 
 .project-section {
