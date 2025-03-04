@@ -31,15 +31,7 @@
 main {
   margin: 2rem;
 }
-.page-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; 
-  padding: var(--space-md);
-  width: 100%;
-  min-height: 100vh;
-}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -73,7 +65,59 @@ p {
   text-align: center;
 }
 
+.portfolio-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
 
+.portfolio-grid .card {
+  overflow: hidden;
+  border-radius: var(--space-sm);
+  width: 100%;
+  max-width: 100%; 
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.portfolio-grid .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid var(--color-gray-medium);
+}
+.portfolio-grid .card-header {
+  background-color: var(--color-gray-dark);
+  padding: var(--space-sm);
+}
+.portfolio-grid .card-footer {
+  display: flex;
+  flex-direction: column; 
+  gap: var(--space-xs);
+  padding: var(--space-sm);
+}
+
+
+.portfolio-grid .card-body {
+  text-align: center;
+  padding: var(--space-sm);
+  font-size: 16px;
+  background-color: var(--color-gray-dark);
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  padding: var(--space-md);
+  width: 100%;
+  min-height: 100vh;
+}
 .grid {
   flex: 1;
   display: grid;
@@ -333,49 +377,7 @@ footer a {
   color: var(--color-text);
 }
 
-.portfolio-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem 1rem;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  width: 100%;
-  max-width: 100%;
-}
 
-.portfolio-grid .card {
-  overflow: hidden;
-  border-radius: var(--space-sm);
-  width: 100%;
-  max-width: 100%; 
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-.portfolio-grid .card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-bottom: 1px solid var(--color-gray-medium);
-}
-.portfolio-grid .card-header {
-  background-color: var(--color-gray-dark);
-  padding: var(--space-sm);
-}
-.portfolio-grid .card-footer {
-  display: flex;
-  flex-direction: column; 
-  gap: var(--space-xs);
-  padding: var(--space-sm);
-}
-
-
-.portfolio-grid .card-body {
-  text-align: center;
-  padding: var(--space-sm);
-  font-size: 16px;
-  background-color: var(--color-gray-dark);
-}
 
 @media (max-width: 600px) {
 

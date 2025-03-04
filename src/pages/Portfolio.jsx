@@ -1,6 +1,8 @@
 import PageLayout from "../components/PageLayout";
 import Project from "../components/Project";
 
+
+
 export default function Projects() {
   return (
     <>
