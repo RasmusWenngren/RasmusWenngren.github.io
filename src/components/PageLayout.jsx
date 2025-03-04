@@ -31,7 +31,7 @@ export default function PageLayout({
         )}
       </Hero>
       
-      <div className="page-container">
+      <div >
         {pageTitle && <h1>{pageTitle}</h1>}
         {children}
       </div>

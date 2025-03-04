@@ -69,49 +69,6 @@ p {
   text-align: center;
 }
 
-.portfolio-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem 1rem;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  width: 100%;
-  max-width: 100%;
-}
-
-.portfolio-grid .card {
-  overflow: hidden;
-  border-radius: var(--space-sm);
-  width: 100%;
-  max-width: 100%; 
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-.portfolio-grid .card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-bottom: 1px solid var(--color-gray-medium);
-}
-.portfolio-grid .card-header {
-  background-color: var(--color-gray-dark);
-  padding: var(--space-sm);
-}
-.portfolio-grid .card-footer {
-  display: flex;
-  flex-direction: column; 
-  gap: var(--space-xs);
-  padding: var(--space-sm);
-}
-
-
-.portfolio-grid .card-body {
-  text-align: center;
-  padding: var(--space-sm);
-  font-size: 16px;
-  background-color: var(--color-gray-dark);
-}
 
 .grid {
   flex: 1;
@@ -392,24 +349,7 @@ footer a {
 
 
 }
-@media (max-width: 599px) {
-  .portfolio-grid .card {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  
-  .portfolio-grid .card img {
-    max-width: 100%;
-    height: auto;
-  }
- 
-  .portfolio-grid .card-header,
-  .portfolio-grid .card-body {
-    width: 100%;
-    box-sizing: border-box;
-  }
-}
+
 @media (min-width: 600px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -425,31 +365,7 @@ footer a {
 
   }
 
-  .portfolio-grid .card img {
-    width: 40%;
-    height: auto;
-    object-fit: cover;
-    border-bottom: none;
-    aspect-ratio: 16/9;
-  }
 
-  .portfolio-grid .card-body {
-    padding: var(--space-sm);
-    font-size: 16px;
-    background-color: var(--color-gray-dark);
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .portfolio-grid .card-header {
-    background-color: var(--color-gray-dark);
-  }
-  .portfolio-grid .card-footer {
-    flex-direction: row; 
-    justify-content: center;
-  }
 }
 
 @media (min-width: 900px) {
@@ -603,8 +519,8 @@ footer a {
     page-break-inside: avoid;
   }
 
-  .grid,
-  .portfolio-grid {
+  .grid
+  {
     display: block;
   }
 
