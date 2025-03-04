@@ -19,9 +19,13 @@
   --font-size-xl: clamp(1.5rem, 2.5vw, 2rem);
   /* Transitions */
   --transition: 0.5s ease-in-out;
+  width: 100%;
 
 }
-
+#root{
+  width: 100%;
+  height: 100%;
+}
 * {
   margin: 0;
   padding: 0;
@@ -109,15 +113,6 @@ p {
   background-color: var(--color-gray-dark);
 }
 
-.page-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; 
-  padding: var(--space-md);
-  width: 100%;
-  min-height: 100vh;
-}
 .grid {
   flex: 1;
   display: grid;
@@ -130,6 +125,8 @@ p {
   margin-bottom: 3rem;
   justify-content: center;
 }
+
+
 
 .card {
   max-width: 100%;
@@ -280,6 +277,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+
 }
 
 footer a {
@@ -461,20 +459,19 @@ footer a {
 }
 
 .contact-info {
-  /* display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap:nowrap;
-  grid-column: 2;
-  gap: var(--space-sm); */
+
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+ 
 }
-
+.contact-info .card{
+  background-color: transparent;
+  box-shadow: none;
+}
 
 .contact-info a {
   font-size: var(--font-size-xl);

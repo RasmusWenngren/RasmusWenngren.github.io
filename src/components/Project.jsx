@@ -28,7 +28,7 @@ export default function Project() {
   if (loading)
     return (
       <>
-        <div className="project-section">
+        <div className="grid">
           <ClimbingBoxLoader size={10} color="#faebd7" />
         </div>
       </>

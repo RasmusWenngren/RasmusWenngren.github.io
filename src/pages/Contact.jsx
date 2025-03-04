@@ -47,10 +47,11 @@ export default function Contact() {
         you prefere.
       </p>
 
-      <section className="grid">
+      <section className="contact-grid">
         <div className="contact-info">
           {cardData.map((card, index) => (
-            <Card
+            <Card 
+            id="background"
               key={index}
               {...card}
               icon={<FontAwesomeIcon icon={card.icon} size="2x" />}

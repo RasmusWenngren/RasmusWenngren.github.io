@@ -11,8 +11,8 @@ export default function PageLayout({
   heroButtonAction,
   children 
 }) {
-  const loaction = useLocation();
-  const pageName = loaction.pathname.replace('/', '') || 'home';
+  const location = useLocation();
+  const pageName = location.pathname.replace('/', '') || 'home';
   return (
     <div>
       <Hero page={pageName}>
@@ -31,10 +31,10 @@ export default function PageLayout({
         )}
       </Hero>
       
-      <main className="page-content">
+      <div className="page-container">
         {pageTitle && <h1>{pageTitle}</h1>}
         {children}
-      </main>
+      </div>
     </div>
   );
 }
