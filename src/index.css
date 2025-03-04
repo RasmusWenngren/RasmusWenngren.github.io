@@ -343,12 +343,12 @@ footer a {
   width: 100%;
   max-width: 100%;
 }
-/*-------------------------*/
+
 .portfolio-grid .card {
   overflow: hidden;
   border-radius: var(--space-sm);
   width: 100%;
-  max-width: 100%; /* Prevent cards from overflowing */
+  max-width: 100%; 
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -364,7 +364,7 @@ footer a {
 }
 .portfolio-grid .card-footer {
   display: flex;
-  flex-direction: column; /* Stack buttons on small screens */
+  flex-direction: column; 
   gap: var(--space-xs);
   padding: var(--space-sm);
 }
@@ -372,7 +372,6 @@ footer a {
 
 .portfolio-grid .card-body {
   text-align: center;
-  /*------------*/
   padding: var(--space-sm);
   font-size: 16px;
   background-color: var(--color-gray-dark);
@@ -399,13 +398,12 @@ footer a {
     margin: 0 auto;
   }
   
-  /* Ensure images don't cause overflow */
+  
   .portfolio-grid .card img {
     max-width: 100%;
     height: auto;
   }
-  
-  /* Ensure all elements have proper box-sizing */
+ 
   .portfolio-grid .card-header,
   .portfolio-grid .card-body {
     width: 100%;
@@ -449,7 +447,7 @@ footer a {
     background-color: var(--color-gray-dark);
   }
   .portfolio-grid .card-footer {
-    flex-direction: row; /* Horizontal buttons on larger screens */
+    flex-direction: row; 
     justify-content: center;
   }
 }
@@ -460,20 +458,27 @@ footer a {
   }
 }
 
-.grid .contact-info {
-  display: flex;
+.contact-info {
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap:nowrap;
   grid-column: 2;
+  gap: var(--space-sm); */
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
+
 
 .contact-info a {
   font-size: var(--font-size-xl);
   padding: var(--space-md);
   color: inherit;
   text-decoration: none;
-  
 }
 
 .eastereggModal {

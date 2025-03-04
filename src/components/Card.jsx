@@ -1,4 +1,4 @@
-export default function Card ({title, description, image, items = []}) {
+export default function Card ({title, description, image, items = [], icon, link}) {
   return(
     <>
      <article className="card">
@@ -7,6 +7,13 @@ export default function Card ({title, description, image, items = []}) {
         <h2>{title}</h2>
       </div>
       <div className="card-body">
+      {icon && link && (
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <div className="card-icon">
+                {icon} 
+              </div>
+            </a>
+          )}
       {description && <p>{description}</p>}
         {items.length > 0 && items.map((item, index) => (
           <article className="information" key={index}>
@@ -22,6 +29,7 @@ export default function Card ({title, description, image, items = []}) {
           </article>
         ))}
       </div>
+
     </article>
     </>
   );
