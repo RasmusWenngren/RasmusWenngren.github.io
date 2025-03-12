@@ -48,7 +48,6 @@ body {
   animation: fadeIn 0.5s ease-in forwards;
   font-size: var(--font-size-base);
   font-family: 'Roboto', sans-serif;
-  align-items: center;
   overflow-x: hidden;
 }
 
@@ -231,7 +230,7 @@ footer {
   color: var(--color-text);
   text-align: center;
   padding: 10px;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
 
