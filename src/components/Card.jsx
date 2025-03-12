@@ -1,8 +1,8 @@
-export default function Card ({title, description, image, items = [], icon, link}) {
+export default function Card ({title, description, image, items = [], imageId, icon, link}) {
   return(
     <>
      <article className="card">
-     {image && <img src={image} alt={title} />}
+     {image && <img src={image} alt={title} id={imageId} />}
       <div className="card-header">
         <h2>{title}</h2>
       </div>
