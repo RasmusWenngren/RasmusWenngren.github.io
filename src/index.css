@@ -36,12 +36,13 @@
 
 main {
   margin: 2rem;
+  flex: 1;
 }
 
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   opacity: 0;
@@ -352,6 +353,14 @@ footer a {
 @media (min-width: 600px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    
+  }
+  .contact-info{
+    display: flex;  /* Switch to flex layout */
+    flex-direction: row;  /* Items in a row */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;  /* Space between items */
   }
 
   .portfolio-grid .card {
@@ -370,6 +379,10 @@ footer a {
 @media (min-width: 900px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
+    
+  }
+  .contact-info {
+    flex-direction: row;  /* Keep items in a row on larger screens */
   }
 }
 
@@ -394,16 +407,21 @@ footer a {
   aspect-ratio: 16/9;
   object-fit:contain;
 }
-
-.contact-info {
-
-  display: flex;
-  flex-direction: row;
-  text-align: center;
+.contact-grid {
+  min-height:30vh;
+  display: grid;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
 
+.contact-info {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: var(--transition);
+  height: min-content;
+  
 }
 
 .contact-info .card {
