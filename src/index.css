@@ -356,11 +356,11 @@ footer a {
     
   }
   .contact-info{
-    display: flex;  /* Switch to flex layout */
-    flex-direction: row;  /* Items in a row */
+    display: flex;  
+    flex-direction: row; 
     justify-content: center;
     align-items: center;
-    gap: 2rem;  /* Space between items */
+    gap: 2rem;  
   }
 
   .portfolio-grid .card {
@@ -391,6 +391,7 @@ footer a {
   height: 50vh;
   aspect-ratio: 16/9;
   object-fit:contain;
+  background-color: #141414;
   
 }
 
@@ -399,6 +400,7 @@ footer a {
   height: 50vh;
   aspect-ratio: 16/9;
   object-fit:contain;
+  background-color: #141414;
 }
 
 #img-personality {
@@ -406,6 +408,7 @@ footer a {
   height: 50vh;
   aspect-ratio: 16/9;
   object-fit:contain;
+  background-color: #141414;
 }
 .contact-grid {
   min-height:30vh;
