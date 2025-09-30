@@ -14,12 +14,12 @@ export default defineConfig({
         theme_color: "#483737",
         icons: [
           {
-            src: "/icons/icon-192x192.png",
+            src: "/dynamic-cv-portal/icons/icon-192x192.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "/icons/icon-512x512.png",
+            src: "/dynamic-cv-portal/icons/icon-512x512.png",
             sizes: "512x512",
             type: "image/png",
           },
@@ -76,9 +76,9 @@ export default defineConfig({
       },
     }),
   ],
-  base: "/",
+  base: "/dynamic-cv-portal/",
   server: {
-    open: "/",
+    open: "/dynamic-cv-portal/",
   },
   build: {
     outDir: "dist",
