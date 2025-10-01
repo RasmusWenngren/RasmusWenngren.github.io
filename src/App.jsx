@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
 import { ModalProvider } from "./context/ModalContext";
 import Header from "./components/layout/Header";
@@ -12,32 +12,34 @@ export default function App() {
   return (
     <ThemeProvider>
       <ModalProvider>
-        <DocumentHead
-          title="Rasmus Wenngren Portfolio"
-          description="Your digital stable management solution"
-          ogTitle="Stablemate"
-          ogDescription="Your digital stable management solution"
-          ogUrl="https://stablemateapp.com/"
-          ogImage="https://stablemateapp.com/wp-content/uploads/2024/11/stablemate-1.jpg"
-          ogType="website"
-        />
+        <BrowserRouter>
+          <DocumentHead
+            title="Rasmus Wenngren Portfolio"
+            description="Your digital stable management solution"
+            ogTitle="Stablemate"
+            ogDescription="Your digital stable management solution"
+            ogUrl="https://stablemateapp.com/"
+            ogImage="https://stablemateapp.com/wp-content/uploads/2024/11/stablemate-1.jpg"
+            ogType="website"
+          />
 
-        <Header />
+          <Header />
 
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/cv" element={<CV />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/*" element={<Home />} />
-          </Routes>
-        </main>
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/cv" element={<CV />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/*" element={<Home />} />
+            </Routes>
+          </main>
 
-        <Footer />
-        <EasterEggContainer />
-        <ModalContainer />
+          <Footer />
+          <EasterEggContainer />
+          <ModalContainer />
+        </BrowserRouter>
       </ModalProvider>
     </ThemeProvider>
   );
